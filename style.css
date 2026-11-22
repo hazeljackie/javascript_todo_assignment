@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 480px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 { text-align: center; margin-top: 0; }
+
+.input-row { display: flex; gap: 8px; }
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover { opacity: 0.9; }
+
+.message { color: #dc2626; min-height: 20px; margin: 6px 0; }
+
+ul { list-style: none; padding: 0; }
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+li span { flex: 1; }
+
+/* Completed tasks */
+li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-btn { background: #dc2626; padding: 6px 10px; }
+
+#clearBtn { margin-top: 10px; background: #6b7280; width: 100%; }
+
+#emptyMsg { text-align: center; color: #888; }
